@@ -19,7 +19,7 @@ module.exports = {
 
       screens: {
         'screen-square': {
-          raw: "(min-aspect-ratio: 0.8/1) and (max-aspect-ratio: 1.2/1)"
+          raw: "(min-aspect-ratio: 0.9/1) and (max-aspect-ratio: 1.1/1)"
         },
       }
     },

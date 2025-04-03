@@ -3,11 +3,11 @@ import { cn } from "lib/utils";
 import Car from "components/icons/Car";
 
 type HeaderProps = {
-  children: React.ReactNode;
   className?: string;
+  size?: "sm" | "lg";
 };
 
-const Header: React.FC = ({ className, children }: HeaderProps) => {
+const Header: React.FC = ({ className, size = "lg" }: HeaderProps) => {
   return (
     <header
       className={cn(
@@ -19,10 +19,17 @@ const Header: React.FC = ({ className, children }: HeaderProps) => {
 
       <div className="relative flex items-end justify-between">
         <div>
-          <h1 className="text-nowrap text-9xl font-semibold">
+          <h1
+            className={cn(
+              "text-nowrap text-8xl font-semibold",
+              size === "sm" && "text-8xl",
+            )}
+          >
             Ready to <br /> own a car?
           </h1>
-          <p className="mt-9 text-5xl">Your Ride, Your Savings</p>
+          <p className={cn("mt-9 text-5xl", size === "sm" && "mt-7 text-4xl")}>
+            Your Ride, Your Savings
+          </p>
         </div>
 
         <div className="relative">
