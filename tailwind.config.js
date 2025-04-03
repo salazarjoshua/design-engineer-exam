@@ -16,7 +16,9 @@ module.exports = {
           "purple": "#544AE5",
         },
       },
-
+      aspectRatio: {
+        portrait: '9/16',
+      },
       screens: {
         'screen-square': {
           raw: "(min-aspect-ratio: 0.9/1) and (max-aspect-ratio: 1.1/1)"

@@ -29,4 +29,21 @@ const Footer: React.FC = ({
   );
 };
 
-export default Footer;
+Footer.displayName = "Footer";
+
+type FooterDescriptionProps = {
+  children?: React.ReactNode;
+  className?: string;
+  fullName?: string;
+};
+
+const FooterDescription: React.FC = ({
+  children,
+  className,
+}: FooterDescriptionProps) => {
+  return <p className={cn("text-xl leading-snug", className)}>{children}</p>;
+};
+
+FooterDescription.displayName = "FooterDescription";
+
+export { Footer, FooterDescription };

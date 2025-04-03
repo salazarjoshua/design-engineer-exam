@@ -1,5 +1,5 @@
 import CarCard from "components/layout/CarCard";
-import Footer from "components/layout/Footer";
+import { Footer } from "components/layout/Footer";
 import Header from "components/layout/Header";
 import carsData from "data/carsData";
 import React from "react";
