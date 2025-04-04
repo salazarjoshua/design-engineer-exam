@@ -6,7 +6,7 @@ import carsData from "data/carsData";
 
 const Portrait: React.FC = () => {
   return (
-    <div className="aspect-portrait grid w-full max-w-[1080px] grid-rows-[auto_1fr_auto]">
+    <div className="aspect-portrait grid w-full grid-rows-[auto_1fr_auto]">
       <Header />
 
       <div className="grid grid-cols-2 gap-x-20 gap-y-32 px-16 py-32">

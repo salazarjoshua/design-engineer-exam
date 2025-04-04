@@ -5,31 +5,17 @@ import Portrait from "components/sizes/Portrait";
 
 function App() {
   return (
-    <>
-      <div className="screen-square:hidden block">
+    <React.Fragment>
+      {/* POTRAIT - 1080x1920 */}
+      <div className="block max-w-[1080px] screen-square:hidden">
         <Portrait />
       </div>
 
-      <div className="screen-square:block hidden">
+      {/* SQUARE - 1080x1080 */}
+      <div className="hidden max-w-[1080px] screen-square:block">
         <Square />
       </div>
-
-      <div className="mt-40 hidden h-screen w-screen flex-col items-center justify-center gap-y-8">
-        <img src="assets/images/exam/colors.png" alt="Sesimi colors" />
-        <div className={`flex gap-x-8`}>
-          <img
-            src="assets/images/exam/1080x1080.png"
-            alt="Social Post"
-            className={`h-88 h-96`}
-          />
-          <img
-            src="assets/images/exam/1080x1920.png"
-            alt="Social Story"
-            className={`h-88 h-96`}
-          />
-        </div>
-      </div>
-    </>
+    </React.Fragment>
   );
 }
 

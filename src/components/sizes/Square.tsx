@@ -6,7 +6,7 @@ import React from "react";
 
 const Square: React.FC = () => {
   return (
-    <div className="grid aspect-square w-full max-w-[1080px] grid-rows-[auto_1fr_auto]">
+    <div className="grid aspect-square h-full w-full grid-rows-[auto_1fr_auto]">
       <Header className="pb-16" size="sm" />
 
       <div className="grid grid-cols-2 place-items-center gap-x-20 gap-y-32 px-8">

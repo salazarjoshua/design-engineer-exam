@@ -34,7 +34,6 @@ Footer.displayName = "Footer";
 type FooterDescriptionProps = {
   children?: React.ReactNode;
   className?: string;
-  fullName?: string;
 };
 
 const FooterDescription: React.FC = ({
